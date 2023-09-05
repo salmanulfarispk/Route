@@ -1,6 +1,7 @@
 import React from 'react'
-import { Form,Button, Alert } from 'react-bootstrap'
+import { Form,Button } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
+
 
 const Login = () => {
    
@@ -20,10 +21,10 @@ const Login = () => {
       </Form.Group>
 
       <Button className='ms-2' onClick={()=>{
-          navigate('/home' ,alert("Are sure to entered into Homepage"))
+          navigate('/home')
         
       }} variant="danger" type="submit">
-        Submit
+        Login
       </Button>
 
 
